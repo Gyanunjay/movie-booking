@@ -1,0 +1,109 @@
+﻿@model IEnumerable<MovieLibrary.Movie>
+@*@model project1.Models.Moviedetail*@
+
+
+<link href = "~/css/moviedetails.css" rel = "stylesheet" />
+
+
+
+@foreach(var i in Model)
+{
+
+    <img src = "~/images/@i.MovieImage" width = "500px" height = "500px"/>
+
+
+    <div class="header">
+        <h1>@i.MovieName</h1>
+        <div class="dropdown">
+            <button class="dropbtn">CAST</button>
+            <div class="dropdown-content">
+                <a href="#">@i.Casthero</a>
+                <a href="#">@i.Castheroine</a>
+                <a href="#">@i.Castothers1</a>
+                <a href="#">@i.Castothers2</a>
+            </div>
+        </div>
+
+        <div class="dropdown" margin-left: 1000px;>
+            <button class="dropbtn">CREW</button>
+            <div class="dropdown-content">
+                <a href="#">Director - @i.Director</a>
+                <a href="#">Producer - @i.Producer</a>
+                <a href="#">Musician - @i.Musician</a>
+            </div>
+        </div>
+
+
+        <div class="dropdown" margin-left: 10000px;>
+            <button class="dropbtn">GENRE</button>
+            <div class="dropdown-content">
+                <a href="#">@i.Genre</a>
+
+            </div>
+        </div>
+
+        <div class="dropdown" margin-left: 10000px;>
+            <button class="dropbtn">CATAGORY</button>
+            <div class="dropdown-content">
+                <a href="#">@i.Catagory</a>
+            </div>
+        </div>
+
+        <div class="dropdown" margin-left: 10000px;>
+            <button class="dropbtn">LANGUAGES</button>
+            <div class="dropdown-content">
+                <a href="#">@i.Movielanguage</a>
+            </div>
+        </div>
+
+    </div>
+    <hr/>
+
+@*<div class="card">
+    <div class="card-image">
+        <div class="load-wraper">
+            <div class="activity"></div>
+            <img src = "~/images/@i.MovieImage/>
+            
+        </div>
+    </div>
+    
+</div>
+</div>*@
+
+
+
+<style>
+table, th, td {
+  border:1px solid #343434;
+}
+</style>
+<body bgcolor="#343434">
+
+
+ <h3>  @i.TheaterName </h3>
+  
+  
+
+
+<hr/>
+
+<table style="width:28%">
+  <tr>
+      <td> <a  asp-action = "Booknow" asp-route-myitemname=@i.MovieName asp-route-myitemid=@i.MovieId  /> 12:00 pm </td>
+     <td><button class="button" style="vertical-align:middle" asp-action = "seats" asp-controller = "seats" ><span>11:00 am</span></button></td>
+    <td><input type = "submit" class="button" style="vertical-align:middle" asp-action = "seats" ><span>1:00 pm</span></td>
+    <td><button class="button" style="vertical-align:middle"><span>6:00 pm</span></button></td>
+    <td><button class="button" style="vertical-align:middle"><span>9:00 pm</span></button></td>
+  </tr>
+</table>
+
+ 
+
+
+</body>
+
+
+}
+
+

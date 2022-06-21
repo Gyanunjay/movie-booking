@@ -1,0 +1,29 @@
+﻿@model MovieLibrary.Movie
+@{
+    Layout = "_Layout1";
+}
+
+
+@if (Model != null)
+{
+    <div class="row">
+        <div class="col-md-4">   
+            <div class="card">
+                <img src="~/Images/@Model.MovieImage">
+                <div class="container">
+                    <div>@Model.MovieId</div>
+                    <div>@Model.MovieName</div>
+                    <div>@Model.Movielanguage</div>
+                    <div>@Model.MovieDuration</div>
+                </div>         
+            </div>
+        </div>
+    </div>
+}
+    <form method="post">
+        
+        <input type="submit" value="confirm delete" class="btn btn-info" />
+    </form>
+    @ViewData["n"] 
+    <a type="button" class="btn btn-success" asp-action = "home"> Go back to home </a>
+

@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "066b8dda-2b46-4e01-9c4e-7bd9c618aa99": {
+      "ProjectGuid": "066b8dda-2b46-4e01-9c4e-7bd9c618aa99",
+      "DisplayName": "BookMyticket",
+      "ColorIndex": 0
+    },
+    "9e5eade9-108e-4fbb-93ef-f0ce8bc0face": {
+      "ProjectGuid": "9e5eade9-108e-4fbb-93ef-f0ce8bc0face",
+      "DisplayName": "MovieLibrary",
+      "ColorIndex": 1
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 2
+}

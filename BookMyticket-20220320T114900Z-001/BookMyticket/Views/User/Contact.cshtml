@@ -1,0 +1,48 @@
+﻿@model MovieLibrary.Contactu
+<html>
+<head>
+<title> Contact Us Page </title>
+</head>
+<body>		
+<header class="ScriptHeader"><br />
+<h3>Contact Us</h3>
+</header>
+<section>
+<p>
+<i class=" far fa-envelope">   
+</i><b> General Support:</b> <br />
+<span><b>contact@gmail.com</b></span>
+</p>
+
+<div style="width:500px; margin-left:300px">
+<form method="post">
+
+<div asp-validation-summary="All" class="text-danger"></div>
+
+<p>Name *</p>
+<input type="text" asp-for=Username  class="form-control"/> 
+ <span asp-validation-for=Username   class="text-danger"></span> <br /><br />
+ 
+<p>Email *</p>
+<input type="text" asp-for=Email  class="form-control"/> 
+ <span asp-validation-for=Email class="text-danger"></span> <br /><br />
+
+<p>Phone *</p>
+<input type="text" asp-for=Phoneno  class="form-control"/> 
+<span asp-validation-for=Phoneno class="text-danger"></span><br /><br />
+
+<p>Subject *</p>
+<input type="text" asp-for=Subjects  class="form-control"/> 
+<span asp-validation-for=Subjects class="text-danger"></span><br /><br />
+
+<p>Message *</p>
+@*@<input type="text" asp-for=Message class="form-control"/>@*@
+<textarea  rows="4" cols="20" asp-for=Message class="form-control"></textarea>
+<span asp-validation-for=Message class="text-danger"></span><br /><br />
+
+<input type="submit" class="btn btn-primary" value="send"> @ViewData["f"]
+</form >
+</div>
+</section>
+</body>
+</html>

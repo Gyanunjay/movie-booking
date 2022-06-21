@@ -1,0 +1,72 @@
+﻿@model MovieLibrary.Movie
+@{
+    Layout = "_Layout1";
+}
+
+
+<article style="background-color:peachpuff;background-size:auto"  >       
+   <form method="post">         
+  <div  style="width:500px; margin-left:300px">
+
+      @ViewData["a"]
+      
+    <h1>Update MOVIE</h1>
+    
+    <hr>
+    <label><b>MOVIE ID</b></label>
+    <input type="text" asp-for="MovieId" class="form-control">
+
+    <label><b>MOVIE NAME</b></label>
+    <input type="text" asp-for="MovieName" class="form-control">
+
+    <label><b> Hero Name </b> </label> 
+    <input  type="text" asp-for="Casthero" class="form-control" />
+
+    <label><b> Heroine Name</b> </label> 
+    <input  type="text" asp-for="Castheroine" class="form-control" />
+    
+    <label><b>Actor - 1</b></label>
+    <input type="text" asp-for="Castothers1" class="form-control">
+    
+    <label><b>Actor - 2</b></label>
+    <input type="text" asp-for="Castothers2" class="form-control">
+
+    <label><b>Director</b></label>
+    <input type="text" asp-for="Director" class="form-control">
+
+    <label><b>Producer</b></label>
+    <input type="text" asp-for="Producer" class="form-control">
+
+    <label><b>Musician</b></label>
+    <input type="text" asp-for="Musician" class="form-control">
+    
+    <label><b>Genre</b></label>
+    <input type="text" asp-for="Genre" class="form-control">
+
+    <label><b>Catagory</b></label>
+    <input type="text" asp-for="Catagory" class="form-control">
+    
+    <label><b>Movie Language</b></label>
+    <input type="text" asp-for="Movielanguage" class="form-control"><br><br>
+
+    <label><b>Theater NAME</b></label>
+    <input type="text" asp-for="TheaterName" class="form-control">
+
+    <label><b> upload Movie Image</b> </label> 
+    <input  type="file" asp-for="MovieImage" class="form-control" />
+
+    <div class="form-group">
+                <label asp-for="MovieDate" class="control-label"></label>
+                <input asp-for="MovieDate" class="form-control" />
+               
+            </div>
+
+    <label><b>Movie Duration</b></label>
+    <input type="text" asp-for="MovieDuration" class="form-control">
+
+    <button type="submit"   class="btn btn-success" style="text-align:center"> Update</button> 
+
+    <a type="button" class="btn btn-success" asp-action = "home">Go to home page </a> 
+    </div>
+    </form>
+    </article>

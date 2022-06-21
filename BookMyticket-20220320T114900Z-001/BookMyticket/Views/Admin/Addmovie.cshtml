@@ -1,0 +1,85 @@
+﻿@model MovieLibrary.Movie
+ @{
+    Layout = "_Layout1";
+}
+
+
+<article style="background-color:peachpuff;background-size:auto"  >       
+   <form method="post">         
+  <div  style="width:500px; margin-left:300px">
+
+      @ViewData["a"]
+      
+    <h1>ADD MOVIE</h1>
+    
+    <hr>
+
+    <label><b>MOVIE NAME</b></label>
+    <input type="text" asp-for="MovieName" class="form-control">
+    <span asp-validation-for=MovieName></span><br />
+
+    <label><b> Hero Name </b> </label> 
+    <input  type="text" asp-for="Casthero" class="form-control" />
+    <span asp-validation-for=Casthero></span><br />
+
+    <label><b> Heroine Name</b> </label> 
+    <input  type="text" asp-for="Castheroine" class="form-control" />
+    <span asp-validation-for=Castheroine></span><br />
+    
+    <label><b>Actor - 1</b></label>
+    <input type="text" asp-for="Castothers1" class="form-control">
+    <span asp-validation-for=Castothers1></span><br />
+    
+    <label><b>Actor - 2</b></label>
+    <input type="text" asp-for="Castothers2" class="form-control">
+    <span asp-validation-for=Castothers2></span><br />
+
+    <label><b>Director</b></label>
+    <input type="text" asp-for="Director" class="form-control">
+    <span asp-validation-for=Director></span><br />
+
+    <label><b>Producer</b></label>
+    <input type="text" asp-for="Producer" class="form-control">
+    <span asp-validation-for=Producer></span><br />
+
+    <label><b>Musician</b></label>
+    <input type="text" asp-for="Musician" class="form-control">
+    <span asp-validation-for=Musician></span><br />
+    
+    <label><b>Genre</b></label>
+    <input type="text" asp-for="Genre" class="form-control">
+    <span asp-validation-for=Genre></span><br />
+
+    <label><b>Catagory</b></label>
+    <input type="text" asp-for="Catagory" class="form-control">
+    <span asp-validation-for=Catagory></span><br />
+    
+    <label><b>Movie Language</b></label>
+    <input type="text" asp-for="Movielanguage" class="form-control"><br><br>
+    <span asp-validation-for=Movielanguage></span><br />
+
+    <label><b>Theater NAME</b></label>
+    <input type="text" asp-for="TheaterName" class="form-control">
+    <span asp-validation-for=TheaterName></span><br />
+
+    <label><b> upload Movie Image</b> </label> 
+    <input  type="file" asp-for="MovieImage" class="form-control" />
+    <span asp-validation-for=MovieImage></span><br />
+
+    <div class="form-group">
+                <label asp-for="MovieDate" class="control-label"></label>
+                <input asp-for="MovieDate" class="form-control" />
+                <span asp-validation-for=MovieDate></span><br />
+               
+            </div>
+
+    <label><b>Movie Duration</b></label>
+    <input type="text" asp-for="MovieDuration" class="form-control">
+    <span asp-validation-for=MovieDuration></span><br />
+
+    <button type="submit"   class="btn btn-success" style="text-align:center"> ADD MOVIE DETAILS</button> 
+
+    <a type="button" class="btn btn-success" asp-action = "home">Go to home page </a> 
+    </div>
+    </form>
+    </article>

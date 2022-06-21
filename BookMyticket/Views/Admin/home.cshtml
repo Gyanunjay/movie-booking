@@ -1,0 +1,32 @@
+﻿@model IEnumerable<MovieLibrary.Movie>
+@{
+    Layout = "_Layout1";
+}
+
+
+   
+
+ 
+<div class="row">
+    
+        @foreach(var item in Model)
+{
+    <div class="col-md-6">   
+        <div class="card">
+  <img src="~/Images/@item.MovieImage">
+  <div class="container">
+  <div> <b>Movie ID:</b> @item.MovieId</div>
+   <div><b>Movie Name:</b> @item.MovieName</div>
+   <div> <b>Movie Language</b>: @item.Movielanguage</div>
+   <div><b>Genre:</b> @item.Genre</div>
+   <div><b>Movie Duration</b>: @item.MovieDuration</div>
+  <a asp-action="deletemovie"  asp-route-myitemid=@item.MovieId     asp-route-myitemname=@item.MovieName asp-route-myitemlanguage=@item.Movielanguage asp-route-myitemimg=@item.MovieImage asp-route-myitemduration=@item.MovieDuration class="btn btn-info">Delete</a>
+  <a asp-action="update"  asp-route-myitemid=@item.MovieId     asp-route-myitemname=@item.MovieName asp-route-myitemlanguage=@item.Movielanguage asp-route-myitemimg=@item.MovieImage asp-route-myitemduration=@item.MovieDuration class="btn btn-info">Update</a>
+  </div>         
+  </div>
+   </div>
+  }
+         
+    
+    </div>
+

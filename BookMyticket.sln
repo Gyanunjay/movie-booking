@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookMyticket", "BookMyticket\BookMyticket.csproj", "{066B8DDA-2B46-4E01-9C4E-7BD9C618AA99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieLibrary", "MovieLibrary\MovieLibrary.csproj", "{9E5EADE9-108E-4FBB-93EF-F0CE8BC0FACE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{066B8DDA-2B46-4E01-9C4E-7BD9C618AA99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{066B8DDA-2B46-4E01-9C4E-7BD9C618AA99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{066B8DDA-2B46-4E01-9C4E-7BD9C618AA99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{066B8DDA-2B46-4E01-9C4E-7BD9C618AA99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E5EADE9-108E-4FBB-93EF-F0CE8BC0FACE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E5EADE9-108E-4FBB-93EF-F0CE8BC0FACE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E5EADE9-108E-4FBB-93EF-F0CE8BC0FACE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E5EADE9-108E-4FBB-93EF-F0CE8BC0FACE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4E542B23-226D-4600-B795-E23E722BF20B}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,27 @@
+﻿@model List<MovieLibrary.Movie>
+
+
+    
+    <div class="row">
+
+
+    @foreach(var item in Model)
+    {
+        <div class="col-sm-3">
+            <div class="card">
+            <img src="~/Images/@item.MovieImage">
+            <div style="text-align:center">
+        <div> @item.MovieId<br /></div>
+         <div>@item.MovieName <br /></div>
+        <div style="color:red"> @item.MovieDuration <br /></div>
+         @*@<div>@item.Roomtype <br /></div>@*@
+         </div>
+         <a asp-action="home"      asp-route-tofind=@item.MovieName  class="btn btn-info">BookNow</a><br/>
+        
+         </div> 
+
+       </div>  
+    }
+    </div>
+
+        @ViewData["search"].

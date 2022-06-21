@@ -1,0 +1,12 @@
+C:\Batch215\.Net\rrlproject\BookMyticket\MovieLibrary\bin\Debug\net6.0\MovieLibrary.deps.json
+C:\Batch215\.Net\rrlproject\BookMyticket\MovieLibrary\bin\Debug\net6.0\MovieLibrary.dll
+C:\Batch215\.Net\rrlproject\BookMyticket\MovieLibrary\bin\Debug\net6.0\ref\MovieLibrary.dll
+C:\Batch215\.Net\rrlproject\BookMyticket\MovieLibrary\bin\Debug\net6.0\MovieLibrary.pdb
+C:\Batch215\.Net\rrlproject\BookMyticket\MovieLibrary\obj\Debug\net6.0\MovieLibrary.csproj.AssemblyReference.cache
+C:\Batch215\.Net\rrlproject\BookMyticket\MovieLibrary\obj\Debug\net6.0\MovieLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Batch215\.Net\rrlproject\BookMyticket\MovieLibrary\obj\Debug\net6.0\MovieLibrary.AssemblyInfoInputs.cache
+C:\Batch215\.Net\rrlproject\BookMyticket\MovieLibrary\obj\Debug\net6.0\MovieLibrary.AssemblyInfo.cs
+C:\Batch215\.Net\rrlproject\BookMyticket\MovieLibrary\obj\Debug\net6.0\MovieLibrary.csproj.CoreCompileInputs.cache
+C:\Batch215\.Net\rrlproject\BookMyticket\MovieLibrary\obj\Debug\net6.0\MovieLibrary.dll
+C:\Batch215\.Net\rrlproject\BookMyticket\MovieLibrary\obj\Debug\net6.0\ref\MovieLibrary.dll
+C:\Batch215\.Net\rrlproject\BookMyticket\MovieLibrary\obj\Debug\net6.0\MovieLibrary.pdb

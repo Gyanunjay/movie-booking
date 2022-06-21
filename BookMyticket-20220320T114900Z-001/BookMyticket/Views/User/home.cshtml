@@ -1,0 +1,33 @@
+﻿@model IEnumerable<MovieLibrary.Movie>
+<link href = "~/lib/bootstrap/dist/css/bootstrap.css" />
+ <h3>WELCOME @ViewData["username"] </h3>
+
+<style>
+    .col-md-3:hover{
+    transform: scale(1.1);
+    }
+
+</style>
+
+
+ <div class="row">
+     <h1> Movies available in Theatres</h1>
+  @foreach(var item in Model)
+  {
+     <div class="col-md-3">   
+            <div class="card">
+                <img src="~/Images/@item.MovieImage" class="rounded">
+                <div class="container">
+                    <div>@item.MovieId</div>
+                    <div>@item.MovieName</div>
+                    <div>@item.Movielanguage</div>
+                    <div>@item.MovieDuration</div>
+                    @*<a type = "submit" class ="btn btn-info" asp-action = "moviedetails">Book Now </a>*@
+                    <a asp-action="moviedetails"    asp-route-myitemname=@item.MovieName asp-route-myitemid=@item.MovieId  class="btn btn-info">Book Now</a>
+                </div>         
+            </div>
+        </div>
+   
+  }    
+     </div>
+     
